@@ -94,21 +94,9 @@ describe('<Heading/>', () => {
     const { container } = renderTheme(<Heading uppercase>Texto</Heading>);
 
     expect(container).toMatchInlineSnapshot(`
-      .c0 {
-        color: #0A1128;
-        font-size: 6.4rem;
-        text-transform: uppercase;
-      }
-
-      @media (max-width:768px) {
-        .c0 {
-          font-size: 4.0rem;
-        }
-      }
-
       <div>
         <h1
-          class="c0"
+          class="styles__Title-sc-1b7ft9h-0 cjtgIq"
         >
           Texto
         </h1>

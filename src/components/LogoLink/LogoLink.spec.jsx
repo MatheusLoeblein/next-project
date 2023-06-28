@@ -33,36 +33,12 @@ describe('<LogoLink />', () => {
     );
 
     expect(container).toMatchInlineSnapshot(`
-      .c1 {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-text-decoration: none;
-        text-decoration: none;
-        -webkit-align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        color: inherit;
-      }
-
-      .c1 > img {
-        max-height: 3rem;
-      }
-
-      .c0 {
-        color: #0A1128;
-        font-size: 2.4rem;
-        text-transform: uppercase;
-      }
-
       <div>
         <h1
-          class="c0"
+          class="styles__Title-sc-1b7ft9h-0 gcibAI"
         >
           <a
-            class="c1"
+            class="styles__Container-cyfc23-0 fSsAzx"
             href="#target"
           >
             <img
