@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 const Heading = styled.h1`
   ${({ theme }) => css`
@@ -7,5 +7,5 @@ const Heading = styled.h1`
 `;
 
 export default function Home() {
-  return <Heading>Oi</Heading>
+  return <Heading>Oi</Heading>;
 }
