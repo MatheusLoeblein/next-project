@@ -4,11 +4,11 @@ import { Container as TextComponent } from '../TextComponent/styles';
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    > ${TextComponent}{
+    > ${TextComponent} {
       margin-bottom: ${theme.spacings.xhuge};
     }
   `}
-  `;
+`;
 
 export const Grid = styled.div`
   ${({ theme }) => css`
@@ -21,17 +21,15 @@ export const Grid = styled.div`
 export const GridElement = styled.div`
   ${({ theme }) => css`
     overflow: hidden;
-
   `}
 `;
 
 export const Image = styled.img`
   ${({ theme }) => css`
-   width: 100%;
-   transition: 300ms all ease-in-out;
-    &:hover{
-        transform: scale(1.2) rotate(10deg);
-
-      }
+    width: 100%;
+    transition: 300ms all ease-in-out;
+    &:hover {
+      transform: scale(1.2) rotate(10deg);
+    }
   `}
 `;

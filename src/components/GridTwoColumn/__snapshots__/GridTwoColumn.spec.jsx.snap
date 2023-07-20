@@ -1,27 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<GridTwoColumn /> should render with two column grid 1`] = `
+.c5 {
+  color: #0A1128;
+  font-size: 6.4rem;
+  text-transform: uppercase;
+}
+
+.c2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.c2 .c4 {
+  margin-bottom: 4.0rem;
+}
+
+.c0 {
+  background: #FFFFFF;
+  color: #0A1128;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+  width: 100%;
+}
+
+.c6 {
+  font-size: 2.4rem;
+}
+
+@media (max-width:768px) {
+  .c5 {
+    font-size: 4.0rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c2 {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width:768px) {
+  .c3 {
+    margin-bottom: 3.2rem;
+  }
+}
+
 <div>
   <div
-    class="styles__Container-d23vz7-0 bMuKEd"
+    class="c0"
     id=""
   >
     <div
-      class="styles__Container-sc-1abwwhx-0 kXNRnk"
+      class="c1"
     >
       <div
-        class="styles__Container-rvovn3-0 kMwTVK"
+        class="c2"
       >
         <div
-          class="styles__TextContainer-rvovn3-1 bheySt"
+          class="c3"
         >
           <h2
-            class="styles__Title-sc-1b7ft9h-0 cjtgIq"
+            class="c4 c5"
           >
             Grid Two Column
           </h2>
           <div
-            class="styles__Container-sc-1ba2h2-0 cPpcCF"
+            class="c6"
           >
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         Voluptatum aut, eaque velit ullam exercitationem architecto
@@ -30,11 +94,11 @@ exports[`<GridTwoColumn /> should render with two column grid 1`] = `
           </div>
         </div>
         <div
-          class="styles__ImageContainer-rvovn3-2"
+          class=""
         >
           <img
             alt="Grid Two Column"
-            class="styles__Image-rvovn3-3"
+            class=""
             src="assets/images/javascript.svg"
           />
         </div>
@@ -45,27 +109,91 @@ exports[`<GridTwoColumn /> should render with two column grid 1`] = `
 `;
 
 exports[`<GridTwoColumn /> should render with two column grid not background 1`] = `
+.c5 {
+  color: #0A1128;
+  font-size: 6.4rem;
+  text-transform: uppercase;
+}
+
+.c2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.c2 .c4 {
+  margin-bottom: 4.0rem;
+}
+
+.c0 {
+  background: #FFFFFF;
+  color: #0A1128;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+  width: 100%;
+}
+
+.c6 {
+  font-size: 2.4rem;
+}
+
+@media (max-width:768px) {
+  .c5 {
+    font-size: 4.0rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c2 {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width:768px) {
+  .c3 {
+    margin-bottom: 3.2rem;
+  }
+}
+
 <div>
   <div
-    class="styles__Container-d23vz7-0 bMuKEd"
+    class="c0"
     id=""
   >
     <div
-      class="styles__Container-sc-1abwwhx-0 kXNRnk"
+      class="c1"
     >
       <div
-        class="styles__Container-rvovn3-0 kMwTVK"
+        class="c2"
       >
         <div
-          class="styles__TextContainer-rvovn3-1 bheySt"
+          class="c3"
         >
           <h2
-            class="styles__Title-sc-1b7ft9h-0 cjtgIq"
+            class="c4 c5"
           >
             Grid Two Column
           </h2>
           <div
-            class="styles__Container-sc-1ba2h2-0 cPpcCF"
+            class="c6"
           >
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         Voluptatum aut, eaque velit ullam exercitationem architecto
@@ -74,11 +202,11 @@ exports[`<GridTwoColumn /> should render with two column grid not background 1`]
           </div>
         </div>
         <div
-          class="styles__ImageContainer-rvovn3-2"
+          class=""
         >
           <img
             alt="Grid Two Column"
-            class="styles__Image-rvovn3-3"
+            class=""
             src="assets/images/javascript.svg"
           />
         </div>

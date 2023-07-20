@@ -7,54 +7,52 @@ import { GridTwoColumn } from '../../components/GridTwoColumn';
 import { GridContent } from '../../components/GridContent';
 import { GridText } from '../../components/GridText';
 import { GridImage } from '../../components/GridImage';
-import { useLocation } from 'react-router-dom';
-
+import P from 'prop-types';
 import config from '../../config';
 
-function Home() {
-  const [data, setData] = useState([]);
-  const location = useLocation();
+function Home({ data }) {
+  // const [data, setData] = useState([]);
 
-  useEffect(() => {
-    const pathname = location.pathname.replace(/[^a-z0-9-_]/gi, '');
-    const slug = pathname ? pathname : config.defaultSlug;
+  // useEffect(() => {
+  //   const pathname = location.pathname.replace(/[^a-z0-9-_]/gi, '');
+  //   const slug = pathname ? pathname : config.defaultSlug;
 
-    const load = async () => {
-      try {
-        const data = await fetch(`${config.url}${slug}&populate=deep`);
-        const json = await data.json();
-        const pageData = mapData([json.data[0].attributes]);
-        setData(() => pageData[0]);
-      } catch (e) {
-        console.log(e);
-        setData(undefined);
-      }
-    };
+  //   const load = async () => {
+  //     try {
+  //       const data = await fetch(`${config.url}${slug}&populate=deep`);
+  //       const json = await data.json();
+  //       const pageData = mapData([json.data[0].attributes]);
+  //       setData(() => pageData[0]);
+  //     } catch (e) {
+  //       console.log(e);
+  //       setData(undefined);
+  //     }
+  //   };
 
-    load();
-  }, [location]);
+  //   load();
+  // }, [location]);
 
-  useEffect(() => {
-    if (data === undefined) {
-      document.title = 'Pagina não encontrada';
-    }
+  // useEffect(() => {
+  //   if (data === undefined) {
+  //     document.title = 'Pagina não encontrada';
+  //   }
 
-    if (data && !data.slug) {
-      document.title = 'Carregando...';
-    }
+  //   if (data && !data.slug) {
+  //     document.title = 'Carregando...';
+  //   }
 
-    if (data && data.title) {
-      document.title = data.title;
-    }
-  }, [data]);
+  //   if (data && data.title) {
+  //     document.title = data.title;
+  //   }
+  // }, [data]);
 
-  if (data === undefined) {
+  if (!data) {
     return <PageNotFound />;
   }
 
-  if (data && !data.slug) {
-    return <Loading />;
-  }
+  // if (data && !data.slug) {
+  //   return <Loading />;
+  // }
 
   const { menu, sections, footerHtml, slug } = data;
   const { links, text, link, srcImg } = menu;
@@ -91,3 +89,7 @@ function Home() {
 }
 
 export default Home;
+
+Home.propTypes = {
+  data: P.object,
+};

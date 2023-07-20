@@ -23,8 +23,12 @@ describe('<TextComponent />', () => {
     const { container } = renderTheme(<TextComponent>Children</TextComponent>);
 
     expect(container.firstChild).toMatchInlineSnapshot(`
+      .c0 {
+        font-size: 2.4rem;
+      }
+
       <div
-        class="styles__Container-sc-1ba2h2-0 cPpcCF"
+        class="c0"
       >
         Children
       </div>
