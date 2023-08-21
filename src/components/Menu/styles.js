@@ -19,23 +19,23 @@ export const Container = styled.div`
     background: ${theme.colors.white};
     transition: all 300ms ease-in-out;
 
-   > ${SectionContainer}{
+    > ${SectionContainer} {
       padding-top: 0;
       padding-bottom: 0;
     }
 
-   & ${Heading} {
+    & ${Heading} {
       margin-top: 0;
       margin-bottom: 0;
-   }
+    }
 
-   @media ${theme.media.lteMedium} {
-    height: 100vh;
-    visibility: hidden;
-    opacity: 0;
-    ${visible && menuVisible(theme)}
+    @media ${theme.media.lteMedium} {
+      height: 100vh;
+      visibility: hidden;
+      opacity: 0;
+      ${visible && menuVisible(theme)}
 
-      > ${SectionContainer}{
+      > ${SectionContainer} {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -44,14 +44,12 @@ export const Container = styled.div`
         overflow-y: auto;
       }
 
-    & ${Heading} {
+      & ${Heading} {
         padding-bottom: ${theme.spacings.large};
         display: flex;
         justify-content: center;
-
+      }
     }
-   }
-
   `}
 `;
 
@@ -83,12 +81,10 @@ export const Button = styled.button`
     display: none;
     pointer-events: ${visible ? 'none' : 'all'};
 
-
     @media ${theme.media.lteMedium} {
       display: flex;
       align-items: center;
       justify-content: center;
-
     }
     > svg {
       width: 2.5rem;

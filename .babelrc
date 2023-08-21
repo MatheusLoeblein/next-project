@@ -1,7 +1,5 @@
 {
-  "presets": [
-    "next/babel"
-  ],
+  "presets": ["next/babel"],
   "plugins": [
     [
       "styled-components",
@@ -18,7 +16,7 @@
           "styled-components",
           {
             "ssr": false,
-            "displayName": false,
+            "displayName": false
           }
         ]
       ]

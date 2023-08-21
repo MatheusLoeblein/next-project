@@ -5,6 +5,6 @@ export const TextComponent = ({ children }) => {
   return <Styled.Container dangerouslySetInnerHTML={{ __html: children }} />;
 };
 
-TextComponent.propsTypes = {
+TextComponent.propTypes = {
   children: P.node.isRequired,
 };

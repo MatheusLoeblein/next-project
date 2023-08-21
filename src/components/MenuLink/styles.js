@@ -20,7 +20,7 @@ export const Container = styled.a`
       transition: all 300ms ease-in-out;
     }
 
-    &:hover::after{
+    &:hover::after {
       left: 25%;
       width: 50%;
     }

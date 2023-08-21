@@ -34,7 +34,7 @@ export const Menu = ({ links = [], LogoData }) => {
   );
 };
 
-Menu.propsTypes = {
-  ...NavLinks.propsTypes,
-  logoData: P.shape(LogoLink.propsTypes).isRequired,
+Menu.propTypes = {
+  ...NavLinks.propTypes,
+  logoData: P.shape(LogoLink.propTypes).isRequired,
 };

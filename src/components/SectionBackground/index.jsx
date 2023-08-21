@@ -14,7 +14,7 @@ export const SectionBackground = ({
   );
 };
 
-SectionBackground.propsTypes = {
+SectionBackground.propTypes = {
   children: P.node.isRequired,
   background: P.bool,
   sectionId: P.string,

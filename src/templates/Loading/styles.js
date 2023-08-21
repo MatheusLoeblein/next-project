@@ -19,8 +19,8 @@ export const Container = styled.div`
     z-index: 10;
     background-color: ${theme.colors.primaryColor};
 
-
-    &::before, &::after{
+    &::before,
+    &::after {
       content: '';
       position: absolute;
       top: 50%;
@@ -32,7 +32,7 @@ export const Container = styled.div`
       border-radius: 50%;
     }
 
-    &::after{
+    &::after {
       width: 6rem;
       height: 6rem;
       border-left: 0.5rem solid ${theme.colors.secondaryColor};
@@ -40,7 +40,7 @@ export const Container = styled.div`
       animation: ${rotate()} 1s linear infinite;
     }
 
-    &::before{
+    &::before {
       width: 2rem;
       height: 2rem;
       border-left: 0.5rem solid ${theme.colors.secondaryColor};
@@ -48,6 +48,5 @@ export const Container = styled.div`
 
       animation: ${rotate()} 600ms linear reverse infinite;
     }
-
   `}
 `;

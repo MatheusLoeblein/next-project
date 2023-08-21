@@ -5,6 +5,6 @@ export const SectionContainer = ({ children }) => {
   return <Styled.Container>{children}</Styled.Container>;
 };
 
-SectionContainer.propsTypes = {
+SectionContainer.propTypes = {
   children: P.node.isRequired,
 };

@@ -30,7 +30,7 @@ export const GridImage = ({
   );
 };
 
-GridImage.propsTypes = {
+GridImage.propTypes = {
   title: P.string.isRequired,
   description: P.string.isRequired,
   background: P.bool,

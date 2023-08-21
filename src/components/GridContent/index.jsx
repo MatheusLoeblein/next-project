@@ -25,7 +25,7 @@ export const GridContent = ({
   );
 };
 
-GridContent.propsTypes = {
+GridContent.propTypes = {
   title: P.string.isRequired,
   html: P.string.isRequired,
   background: P.bool,

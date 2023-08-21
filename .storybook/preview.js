@@ -17,8 +17,7 @@ const preview = {
           name: 'dark',
           value: theme.colors.primaryColor,
         },
-      ]
-
+      ],
     },
     controls: {
       matchers: {
@@ -34,9 +33,8 @@ export default preview;
 export const decorators = [
   (Story) => (
     <ThemeProvider theme={theme}>
-
-      <Story/>
-      <GlobalStyles/>
+      <Story />
+      <GlobalStyles />
     </ThemeProvider>
-  )
+  ),
 ];

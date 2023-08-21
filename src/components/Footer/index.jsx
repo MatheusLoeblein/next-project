@@ -13,6 +13,6 @@ export const Footer = ({ footerHtml }) => {
   );
 };
 
-Footer.propsTypes = {
+Footer.propTypes = {
   footerHtml: P.string.isRequired,
 };

@@ -8,7 +8,6 @@ export const Container = styled.nav`
     @media ${theme.media.lteMedium} {
       flex-flow: column wrap;
       align-content: center;
-
     }
   `}
 `;

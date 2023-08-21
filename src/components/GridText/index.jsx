@@ -33,7 +33,7 @@ export const GridText = ({
   );
 };
 
-GridText.propsTypes = {
+GridText.propTypes = {
   title: P.string.isRequired,
   description: P.string.isRequired,
   background: P.bool,

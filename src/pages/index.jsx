@@ -5,12 +5,13 @@ import { mapData } from '../api/map-data';
 import Home from '../templates/Home';
 
 export default function Index({ data = null }) {
-  console.log(data);
   return <Home data={data}></Home>;
 }
 
 export const getStaticProps = async () => {
   const raw = await fetch(`${config.url}${config.defaultSlug}&populate=deep`);
+
+  console.log(raw);
   const json = await raw.json();
 
   const data = mapData([json.data[0].attributes])[0];
@@ -22,6 +23,6 @@ export const getStaticProps = async () => {
   };
 };
 
-Index.prototype = {
-  name: P.object,
+Index.propTypes = {
+  data: P.object,
 };
