@@ -3,18 +3,24 @@ import P from 'prop-types';
 import config from '../config';
 import { mapData } from '../api/map-data';
 import Home from '../templates/Home';
+import { loadPages } from '../api/load-pages';
 
 export default function Index({ data = null }) {
   return <Home data={data}></Home>;
 }
 
 export const getStaticProps = async () => {
-  const raw = await fetch(`${config.url}${config.defaultSlug}&populate=deep`);
+  // const raw = await fetch(`${config.url}${config.defaultSlug}&populate=deep`);
+  // const json = await raw.json();
+  // const data = mapData([json.data[0].attributes])[0];
 
-  console.log(raw);
-  const json = await raw.json();
+  let data = null;
 
-  const data = mapData([json.data[0].attributes])[0];
+  try {
+    data = await loadPages('olha-so-que-legal-minha-pagina');
+  } catch (e) {
+    console.log(e);
+  }
 
   return {
     props: {
@@ -24,5 +30,5 @@ export const getStaticProps = async () => {
 };
 
 Index.propTypes = {
-  data: P.object,
+  data: P.array,
 };
